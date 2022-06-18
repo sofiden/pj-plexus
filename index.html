@@ -1,0 +1,65 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&display=swap" rel="stylesheet">
+        <script src="index.js"></script>
+
+
+        <video autoplay muted loop id="video-loop" class="background">
+            <source src="video/part-2.mp4" type="video/mp4">
+        </video>
+    
+  </head>
+    
+
+    <body>
+
+        <div>
+            <p class="header-logo" id="header-logo">logo</p>
+            <img src="img/menu.svg" id="menu" alt="menu" class="menu" width="30">
+        </div>
+
+    
+
+        <div class="intro">
+            <div class="video">
+                <video autoplay muted id="video-intro" class="background">
+                <source src="video/part-1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="intro-content">
+            <div class="container">
+                <h1 class="intro-title" id="intro-text">
+                    CONQUER
+                    <br>
+                    THE NEW AGE 
+                    <br>
+                    DIGITAL WORLD
+                </h1>
+            </div>
+        </div>
+
+
+    
+        <section id="text">
+            <h2 class="text">Let's-get-to-work-</h2>
+        </section>
+
+        <script>
+            const text = document.querySelector('.text');
+            text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+            const element = document.querySelectorAll('span');
+            for(let i = 0; i<element.length; i++){
+                element[i].style.transform = "rotate("+i*20+"deg)"
+            }
+        </script>
+
+        <footer>
+            ...
+        </footer>
+    </body>
+  </html>
