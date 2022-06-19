@@ -168,19 +168,19 @@ section .text span {
 @media (min-width: 1920px) {
 
   .intro-title {
-    padding-top: 190px;
+    padding-top: 130px;
     padding-left: 300px;
   }
 
   .header-logo {
     padding-left: 310px;
-    padding-top: 130px;
+    padding-top: 40px;
     font-size: 50px;
   }
 
   .menu {
-    right: 150px;
-    top: 125px;
+    right: 200px;
+    top: 45px;
     font-size: 40px;
   }
 
