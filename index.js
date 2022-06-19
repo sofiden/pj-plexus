@@ -5,6 +5,7 @@ window.addEventListener('load', function () {
     const headerLogo = document.getElementById('header-logo')
     const menu = document.getElementById('menu')
     const text = document.getElementById('text')
+    const divLogo = document.getElementById('div-logo')
 
     videoIntro.addEventListener('ended', function () {
 
@@ -17,6 +18,8 @@ window.addEventListener('load', function () {
         introText.classList.add("lineUp");
         introText.style.display = 'block'
 
+        divLogo.style.display = 'block'
+
         headerLogo.classList.add("lineUp");
         headerLogo.style.display = 'block'
 
@@ -25,6 +28,8 @@ window.addEventListener('load', function () {
 
         text.classList.add("lineUp");
         text.style.display = 'block'
+    
+
     })
 
     console.log('load')
