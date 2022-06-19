@@ -26,24 +26,29 @@ body {
 .intro-content {   
     top: 0;
     left: 0;
-    width: 100%;
-    height: auto;
     position: absolute;
     
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
+  top: 160px;
+  position: absolute;
+  width: 1000px;
+}
+
+.div-logo {
+  width: 350px;
+  height: 150px;
+  display: none;
+  padding-top: 25px;
 }
 
 .intro-title {
     font-size: 80px;
     color: white;
-    margin: 0;
     text-align: left;
-    padding-top: 200px;
+    margin-bottom: 20px;
+    padding-left: 200px;
     display: none;
 }
 
@@ -53,28 +58,44 @@ body {
     position: absolute;
     display: none;
     color: white;
-    padding-left: 130px;
-    padding-top: 20px;
-    font-size: 35px;
+    padding-left: 160px;
+    padding-top: 30px;
+    font-size: 40px;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.header-logo:hover { 
+  color: rgb(177, 246, 246);
 }
 
 
 .menu {
     position: absolute;
+    font-size: 35px;
     display: none;
-    padding-left: 1320px;
-    padding-top: 60px;
+    color: white;
+    right: 110px;
+    padding-top: 80px;
     width: 30px;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
 }
 
+
+.menu:hover { 
+  color: rgb(143, 244, 244);
+}
 
 section {
   display: none;
   position: absolute;
   min-height: 100vh;
-  margin-left: 223px;
-  margin-top: -150px;
+  margin-left: 288px;
+  margin-top: -350px;
 }
+
+
 
 section .text {
   position: absolute;
@@ -94,8 +115,19 @@ section .text span {
   transform-origin: 0 100px;
   }
 
-
+.text {
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
   
+.text:hover { 
+  color: rgb(143, 244, 244);
+}
+
+
+
+
+
 
 @keyframes  animate {
 
